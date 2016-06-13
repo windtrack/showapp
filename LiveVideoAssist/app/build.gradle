@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "cn.nodemedia.nodemediaclient"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    //签名文件的配置
+    signingConfigs {
+        releaseConfig {
+            keyAlias 'xtxy'
+            keyPassword 'Xtxy0058'
+            storeFile file('China_Video')
+            storePassword 'Xtxy0058'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            debuggable true
+            signingConfig signingConfigs.releaseConfig//打包的时候配置签名文件
+        }
+        debug {
+            signingConfig signingConfigs.releaseConfig//debug的时候的签名文件配置（这里和打包用的是同一个签名文件）
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+}
