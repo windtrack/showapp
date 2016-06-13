@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingRight="5dp"
+    android:background="@drawable/chatbackground"
+    >
+    <LinearLayout
+        android:id="@+id/rl_chat_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView_chat_cost"
+            android:background="@mipmap/level_11"
+             />
+
+        <ImageView
+            android:id="@+id/imageView_chat_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/v1"
+            android:layout_alignParentRight="true"
+            android:layout_alignRight="@+id/imageView_chat_cost"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:id="@+id/message_say"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/loginbtnnormal"
+            android:textSize="14sp"
+            android:text="jdshflkjsdkghf"
+            android:layout_marginLeft="3dp"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/message_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_chat_up"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="jdshflkjsdkghfdfgdf"
+        />
+
+
+</RelativeLayout>

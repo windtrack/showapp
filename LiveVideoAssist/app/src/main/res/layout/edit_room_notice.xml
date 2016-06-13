@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:id="@+id/pop_root_view"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/notice_input"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:gravity="top"
+            android:hint="请输入房间公告"
+            android:padding="5dp"
+            android:textColor="@color/blackwords"
+            android:textColorHint="@color/blackwords"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/send_notice_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/loginbtn"
+            android:padding="10dp"
+            android:text="确定"
+            android:textColor="@color/loginbtntextcolor"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

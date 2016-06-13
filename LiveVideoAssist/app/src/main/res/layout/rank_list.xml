@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="right|center_vertical"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:id="@+id/linearLayout_rankListDialog"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout_rankView"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:background="@color/white90"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <ImageButton
+                android:id="@+id/close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@mipmap/close"
+                android:background="@null"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rankListTitle"
+                android:textColor="@color/blackwords"
+                android:layout_centerInParent="true"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/rank_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="7dp"
+            android:divider="@color/listViewFgx"
+            android:dividerHeight="1dp"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            />
+    </LinearLayout>
+</LinearLayout>

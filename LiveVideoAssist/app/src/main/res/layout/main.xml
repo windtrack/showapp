@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/main_con"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/top_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/maitopbg"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <!--顶部布局-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <Button
+                        android:id="@+id/logout_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:padding="10dp"
+                        android:text="@string/logout"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <com.oo58.livevideoassist.view.CircleImageView
+                    android:id="@+id/showHead"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@mipmap/testface"
+                    app:border_color="@color/transparent"
+                    app:border_width="2dp" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <!--房间号和关注数的布局-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/show_room_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="房间号：100101"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:id="@+id/show_guanzhu_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="关注数：100101"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <!--房间公告布局-->
+                <LinearLayout
+                    android:id="@+id/linearLayoutRoomnotice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="@string/roomnotice"
+                        android:textColor="@color/loginbtnnormal"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/showroomnotice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center_vertical"
+                        android:hint="编辑公告"
+                        android:inputType="text"
+                        android:maxWidth="220dp"
+                        android:minHeight="50dp"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/room_notice_edit_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:padding="5dp"
+                        android:src="@mipmap/bianji" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--直播设置-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/setting_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/cameraliving"
+                        android:textColor="@color/blackwords"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/setting_flag"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/xiajiantou" />
+                </LinearLayout>
+                <!--摄像头的设置的界面-->
+                <LinearLayout
+                    android:id="@+id/setting_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:background="@color/sbc1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:weightSum="3">
+
+                    <Button
+                        android:id="@+id/setting_lch_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:background="@color/sbc1"
+                        android:drawableTop="@mipmap/lchnormal"
+                        android:padding="15dp"
+                        android:text="流畅"
+                        android:textColor="@color/blackwords"
+                        android:textSize="14sp" />
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="38dp"
+                        android:background="@color/settingbtnfgx" />
+
+                    <Button
+                        android:id="@+id/setting_pq_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:background="@color/sbc1"
+                        android:drawableTop="@mipmap/mlnormal"
+                        android:padding="15dp"
+                        android:text="普清"
+                        android:textColor="@color/blackwords"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="38dp"
+                        android:background="@color/settingbtnfgx" />
+
+                    <Button
+                        android:id="@+id/setting_hd_btn"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:background="@color/sbc1"
+                        android:drawableTop="@mipmap/hdnormal"
+                        android:padding="15dp"
+                        android:text="高清"
+                        android:textColor="@color/blackwords"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayfgx" />
+
+
+            <!--直播助手按钮-->
+
+            <LinearLayout
+                android:id="@+id/living_helper_btn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/livinghelper"
+                    android:textColor="@color/blackwords"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/helper_seeting_flag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/youjiantou" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/helper_con"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:background="@color/grayfgx"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="visible"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/rank_list_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/giftbtn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/giftsort"
+                        android:textColor="@color/blackwords"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="38dp"
+                    android:background="@color/settingbtnfgx" />
+
+                <LinearLayout
+                    android:id="@+id/qurey_beans"
+                    android:layout_width="0dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/beansbtn" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/beansquery"
+                        android:textColor="@color/blackwords"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grayfgx" />
+
+            <Button
+                android:id="@+id/start_living_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="@dimen/main_bottom_btn_margin_top"
+                android:background="@drawable/loginbtn"
+                android:text="@string/enterliving"
+                android:textColor="@color/loginbtntextcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

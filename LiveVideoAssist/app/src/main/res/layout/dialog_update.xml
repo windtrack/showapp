@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gx_tanchuang"
+            android:layout_marginTop="20dp"/>
+
+        <ImageButton
+            android:id="@+id/layout_update_cancel"
+            android:background="@color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/bl_tanchuanggb"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shop_noble_host_pop"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/text_updatetitle"
+            android:layout_width="fill_parent"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="版本号4.7.1"
+            android:textColor="#313131"
+            android:textSize="15sp" />
+
+
+        <ScrollView
+            android:id="@+id/scrollView_updateInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+
+            >
+
+            <TextView
+                android:id="@+id/text_updateinfo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="5dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="残绝hfgkn\nf\ndfl\ngdsfg"
+                android:textColor="#313131"
+                android:textSize="15sp" />
+
+        </ScrollView>
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1sp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black30"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/layout_update_download"
+            android:layout_width="fill_parent"
+            android:layout_height="40sp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="立即更新"
+            android:textColor="@color/ccred"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    +
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black">#000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black30">#4C000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blackwords">#313131</color>
+    <color name="yellowbg">#ffae00</color>
+    <color name="grayfgx">#eeeeec</color>
+    <color name="settingbtnfgx">#7e7e7e</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white90">#E6FFFFFF</color>
+
+    <color name="loginbtnnormal">#ffd800</color>
+    <color name="loginbtnclicked">#fff600</color>
+    <color name="loginbtntextcolor">#2d2d2d</color>
+    <color name="sbc1">#e5e5e2</color>
+    <color name="listViewFgx">#e5e5e5</color>
+    <color name="sort2">#ff730d</color>
+    <color name="sort3">#30ba00</color>
+    <color name="transparent">#0000</color>
+    <color name="redwords">#ff3838</color>
+    <color name="startlivingbtnclicked">#ededea</color>
+    <color name="huise_zi">#ff676767</color>
+    <color name="red">#F70909</color>
+    <color name="zijicolor">#ff730d</color>
+    <color name="chat_zi_color">#333333</color>
+    <color name="chat_red">#ff0000</color>
+    <color name="item_background">#eeeeec</color>
+    <color name="title_bg">#30ba00</color>
+    <color name="hotpink">#ff1493</color>
+    <color name="systemmsg">#ff4949</color>
+    <color name="ccred">#ff3838</color>
+</resources>

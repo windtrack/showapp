@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/finish_living_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:textColor="@color/loginbtntextcolor"
+        android:textSize="18sp"
+        android:text="@string/finishliving"
+        android:background="@drawable/conerwhiteinputbg"/>
+    <Button
+        android:id="@+id/continue_living_btn"
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="50dp"
+        android:textColor="@color/loginbtntextcolor"
+        android:textSize="18sp"
+        android:text="@string/cotinueliving"
+        android:background="@drawable/loginbtn"/>
+
+
+
+</LinearLayout>

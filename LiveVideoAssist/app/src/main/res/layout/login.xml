@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/all_view_con"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/login_con"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/login_icon_margin_top"
+                        android:src="@mipmap/loginlogo" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:src="@mipmap/dllogozi" />
+
+
+                    <EditText
+                        android:id="@+id/user_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:background="@drawable/conerwhiteinputbg"
+                        android:drawableLeft="@mipmap/dlzhanghao"
+                        android:hint="请输入用户名"
+                        android:minHeight="50dp"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:textColor="@color/blackwords"
+                        android:textColorHint="@color/blackwords"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/pwd_input"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/conerwhiteinputbg"
+                        android:drawableLeft="@mipmap/dlmima"
+                        android:hint="请输入密码"
+                        android:minHeight="50dp"
+                        android:padding="15dp"
+                        android:password="true"
+                        android:singleLine="true"
+                        android:textColor="@color/blackwords"
+                        android:textColorHint="@color/blackwords"
+                        android:textSize="16sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_savePwd"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:background="@null"
+                            android:button="@drawable/checkbox"
+                            android:paddingLeft="10dp"
+                            android:text="@string/remeberpwd"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/login_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/loginbtn"
+                        android:padding="10dp"
+                        android:text="@string/login"
+                        android:textColor="@color/loginbtntextcolor"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/show_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="当前版本:1.0.1"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
